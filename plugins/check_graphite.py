@@ -85,7 +85,7 @@ def check_graphite(args):
     if all_null:
       print "Failed: query %s returned all null values" % (query)
       return STATE_CRITICAL
-    
+
   print "Failed: query %s returned %s" % (query, result)
 
   if args.failiswarn:
